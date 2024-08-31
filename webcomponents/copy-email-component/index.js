@@ -119,9 +119,9 @@ class CopyEmailComponent extends HTMLElement {
         <span class="success-message" style="color: ${defaultColor};" aria-live="polite"></span>
       </div>
       <span class="icon" aria-label="Copy email" role="button" tabindex="0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 18" stroke-linecap="round" stroke-linejoin="round">
-          <rect class="envelope" x="1" y="1" width="30" height="16" />
-          <polyline class="arrow" points="1 4 16 12 31 4" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 16" stroke-linecap="round" stroke-linejoin="round">
+          <rect class="envelope" x="1" y="1" width="28" height="14" />
+          <polyline class="arrow" points="1 4 15 11 29 4" />
         </svg>
       </span>
     `;
