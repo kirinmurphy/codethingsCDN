@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Email Component - Example</title>
+  <script type="module" src="index.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 4vw;
+      background: #333;
+      color: #fff;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .wrapper {
+      width: 600px;
+      padding: .5rem 1rem;
+      text-align: right;
+    }
+
+    section:nth-of-type(1) .wrapper {
+      background: #000;
+    }
+
+    section:nth-of-type(2) .wrapper {
+      background: #ddd;
+    }
+
+    pre {
+      width: 600px;
+      background: #222;
+      padding: 1rem 2rem;
+      overflow-x: auto; 
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Copy Email Component - Example</h1>
+  </header>
+
+  <section>
+    <h3>Default implementation</h3>
+  
+    <div class="wrapper">
+      <copy-email-component 
+        email="email@example.com">
+      </copy-email-component>
+    </div>
+  
+<pre>&lt;copy-email-component 
+  email="email@example.com"&gt;
+&lt;/copy-email-component&gt;
+
+&lt;script type="module" 
+  src="https://cdn.codethings.net/webcomponents/copy-email-component/index.js"&gt;
+&lt;/script&gt;
+
+</pre>
+  </section>
+  <section>
+    <h3>With Options</h3>
+
+    <div class="wrapper" style="font-size: 20px; font-weight: bold;" >
+      <copy-email-component 
+        email="email@example.com"
+        display-label="email@example.com"
+        copy-success-message-duration="6000"
+        default-color="#00b"
+        hover-color="#05f">
+      </copy-email-component>
+    </div>
+
+    <pre>&lt;div style="font-size: 20px; font-weight: bold;"&gt;
+  &lt;copy-email-component 
+    email="email@example.com"              // required
+    display-label="email@example.com"      // defaults to ""
+    copy-success-message-duration="6000"   // defaults to 2000
+    default-color="#00b"                   // defaults to white
+    hover-color="#05f"&gt;                    // defaults to white
+  &lt;/copy-email-component&gt;
+&lt;/div&gt;
+
+These values will inherit from the parent: 
+- font-family
+- font-weight
+- text-decoration
+- font-size
+
+</pre>
+  </section>
+</body>
+</html>
