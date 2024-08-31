@@ -4,4 +4,4 @@
 
 ### Copy Email Component 
 Click an email icon to copy an email to your clipboard.
-[Demo](https://codethings.com/codethingsCDN/copy-email-component.html)
+[Examples](https://cdn.codethings.net/webcomponents/copy-email-component/example.html)
